@@ -20,6 +20,7 @@ documentclass: book
 
 ```{r setup}
 library("knitr")
+knitr::opts_knit$set(root.dir = '~/Documents/PhD/pdobrano/')
 opts_chunk$set(echo = TRUE)
 ```
 
@@ -62,8 +63,8 @@ knitr::include_graphics(plot.plspcr)
 
 ```{r}
 # A visual description of the "regularized regression"
-plot.rreg = pdftools::pdf_convert("./docs/ml_figures/Regularized_regression.pdf", format = "png", pages = 1, filenames = "./docs/ml_figures/Regularized_regression.pdf")
-knitr::include_graphics(plot.rreg)
+#plot.rreg = pdftools::pdf_convert("./docs/ml_figures/Regularized_regression.pdf", format = "png", pages = 1, filenames = "./docs/ml_figures/Regularized_regression.png")
+#knitr::include_graphics(plot.rreg)
 ```
 
 ```{r}

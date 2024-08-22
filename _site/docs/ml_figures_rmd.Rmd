@@ -1,0 +1,77 @@
+---
+title: "Tabular Machine Learning Algorithms"
+Author: Peter Dobranowski
+date: "`r Sys.Date()`"
+
+output: 
+  bookdown::gitbook:
+    split_by: section
+  bookdown::pdf_book:
+    keep_tex: no
+documentclass: book
+---
+
+bookdown::gitbook:
+  config:
+    toc:
+      before: |
+        <li><a href="./">Short Title</a></li>
+bookdown::pdf_book:
+  latex_engine: xelatex
+  citation_package: natbib
+bookdown::epub_book: default
+
+getwd()
+
+```{r setup}
+library("knitr")
+opts_knit$set(root.dir = '~/Documents/PhD/pdobrano/docs')
+#opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# A visual description of the "decision tree"
+include_graphics("./ml_figures/Decision_tree.pdf",
+                        auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE), dpi = NULL)
+```
+
+```{r}
+# A visual description of the "random forest"
+knitr::include_graphics("./docs/ml_figures/Random_forest.pdf")
+```
+
+```{r}
+# A visual description of the "gradient boosting machine"
+knitr::include_graphics("./docs/ml_figures/Gradient_boosting.pdf")
+```
+
+```{r}
+# A visual description of the "k nearest neighbours"
+knitr::include_graphics("./docs/ml_figures/K_nearest_neighbour.pdf")
+```
+
+```{r}
+# A visual description of the "linear regression"
+knitr::include_graphics("./docs/ml_figures/Linear_regression.pdf")
+```
+
+```{r}
+# A visual description of the "pls and pcr"
+knitr::include_graphics("./docs/ml_figures/PLS_PCR.pdf")
+```
+
+```{r}
+# A visual description of the "regularized regression"
+knitr::include_graphics("./docs/ml_figures/Regularized_regression.pdf")
+```
+
+```{r}
+# A visual description of the "neural network"
+knitr::include_graphics("./docs/ml_figures/Neural_network.pdf")
+```
+
+```{r}
+# A visual description of the "support vector machine"
+knitr::include_graphics("./docs/ml_figures/Support_vector_machine.pdf")
+```
+

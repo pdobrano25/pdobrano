@@ -24,7 +24,7 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE)
 
 ```{r}
 # To convert pdf to png, use this:
-#plot.rreg = pdftools::pdf_convert("./ml_figures/Regularized_regression.pdf", format = "png", pages = 1, filenames = "./ml_figures/Regularized_regression.png")
+#plot.rreg = pdftools::pdf_convert("./ml_figures/Regularized_regression.pdf", format = "png", pages = 1, filenames = #"./ml_figures/Regularized_regression.png")
 #knitr::include_graphics("./ml_figures/Regularized_regression.png")
 ```
 
@@ -32,6 +32,8 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE)
 # A visual description of the "decision tree"
 knitr::include_graphics("./ml_figures/Decision_tree.png")
 ```
+
+A decision tree is a simple algorithm that employs recursive partitioning.
 
 ```{r}
 # A visual description of the "random forest"
@@ -61,7 +63,7 @@ knitr::include_graphics("./ml_figures/PLS_PCR.png")
 
 ```{r}
 # A visual description of the "regularized regression"
-#knitr::include_graphics("./ml_figures/Regularized_regression.png")
+knitr::include_graphics("./ml_figures/Regularized_regression.png")
 ```
 
 ```{r}

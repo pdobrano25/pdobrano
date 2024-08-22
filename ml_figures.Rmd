@@ -20,62 +20,62 @@ documentclass: book
 
 ```{r setup}
 library("knitr")
-knitr::opts_knit$set(root.dir = '~/Documents/PhD/pdobrano/')
+#knitr::opts_knit$set(root.dir = '~/Documents/PhD/pdobrano/')
 opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
 # A visual description of the "decision tree"
-plot.dt = pdftools::pdf_convert("./docs/ml_figures/Decision_tree.pdf", format = "png", pages = 1, filenames = "./docs/ml_figures/Decision_tree.png")
+plot.dt = pdftools::pdf_convert("./ml_figures/Decision_tree.pdf", format = "png", pages = 1, filenames = "./ml_figures/Decision_tree.png")
 knitr::include_graphics(plot.dt)
 ```
 
 ```{r}
 # A visual description of the "random forest"
-plot.rf = pdftools::pdf_convert("./docs/ml_figures/Random_forest.pdf", format = "png", pages = 1, filenames = "./docs/ml_figures/Random_forest.png")
+plot.rf = pdftools::pdf_convert("./ml_figures/Random_forest.pdf", format = "png", pages = 1, filenames = "./ml_figures/Random_forest.png")
 knitr::include_graphics(plot.rf)
 ```
 
 ```{r}
 # A visual description of the "gradient boosting machine"
-plot.gt = pdftools::pdf_convert("./docs/ml_figures/Gradient_boosting.pdf", format = "png", pages = 1, filenames = "./docs/ml_figures/Gradient_boosting.png")
+plot.gt = pdftools::pdf_convert("./ml_figures/Gradient_boosting.pdf", format = "png", pages = 1, filenames = "./ml_figures/Gradient_boosting.png")
 knitr::include_graphics(plot.gt)
 ```
 
 ```{r}
 # A visual description of the "k nearest neighbours"
-plot.knn = pdftools::pdf_convert("./docs/ml_figures/K_nearest_neighbour.pdf", format = "png", pages = 1, filenames = "./docs/ml_figures/K_nearest_neighbour.png")
+plot.knn = pdftools::pdf_convert("./ml_figures/K_nearest_neighbour.pdf", format = "png", pages = 1, filenames = "./ml_figures/K_nearest_neighbour.png")
 knitr::include_graphics(plot.knn)
 ```
 
 ```{r}
 # A visual description of the "linear regression"
-plot.lm = pdftools::pdf_convert("./docs/ml_figures/Linear_regression.pdf", format = "png", pages = 1, filenames = "./docs/ml_figures/Linear_regression.png")
+plot.lm = pdftools::pdf_convert("./ml_figures/Linear_regression.pdf", format = "png", pages = 1, filenames = "./ml_figures/Linear_regression.png")
 knitr::include_graphics(plot.lm)
 
 ```
 
 ```{r}
 # A visual description of the "pls and pcr"
-plot.plspcr = pdftools::pdf_convert("./docs/ml_figures/PLS_PCR.pdf", format = "png", pages = 1, filenames = "./docs/ml_figures/PLS_PCR.png")
+plot.plspcr = pdftools::pdf_convert("./ml_figures/PLS_PCR.pdf", format = "png", pages = 1, filenames = "./ml_figures/PLS_PCR.png")
 knitr::include_graphics(plot.plspcr)
 ```
 
 ```{r}
 # A visual description of the "regularized regression"
-#plot.rreg = pdftools::pdf_convert("./docs/ml_figures/Regularized_regression.pdf", format = "png", pages = 1, filenames = "./docs/ml_figures/Regularized_regression.png")
+#plot.rreg = pdftools::pdf_convert("./ml_figures/Regularized_regression.pdf", format = "png", pages = 1, filenames = "./ml_figures/Regularized_regression.png")
 #knitr::include_graphics(plot.rreg)
 ```
 
 ```{r}
 # A visual description of the "neural network"
-plot.nnet = pdftools::pdf_convert("./docs/ml_figures/Neural_network.pdf", format = "png", pages = 1, filenames = "./docs/ml_figures/Neural_network.png")
+plot.nnet = pdftools::pdf_convert("./ml_figures/Neural_network.pdf", format = "png", pages = 1, filenames = "./ml_figures/Neural_network.png")
 knitr::include_graphics(plot.nnet)
 ```
 
 ```{r}
 # A visual description of the "support vector machine"
-plot.svm = pdftools::pdf_convert("./docs/ml_figures/Support_vector_machine.pdf", format = "png", pages = 1, filenames = "./docs/ml_figures/Support_vector_machine.png")
+plot.svm = pdftools::pdf_convert("./ml_figures/Support_vector_machine.pdf", format = "png", pages = 1, filenames = "./ml_figures/Support_vector_machine.png")
 knitr::include_graphics(plot.svm)
 ```
 

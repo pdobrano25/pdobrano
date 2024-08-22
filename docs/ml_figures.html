@@ -272,68 +272,13 @@ $(document).ready(function () {
 </div>
 
 
-<pre class="r"><code>library(&quot;knitr&quot;)</code></pre>
-<pre><code>## Warning: package &#39;knitr&#39; was built under R version 4.3.3</code></pre>
-<pre class="r"><code>#knitr::opts_knit$set(root.dir = &#39;~/Documents/PhD/pdobrano/&#39;)
-opts_chunk$set(echo = TRUE)</code></pre>
-<pre class="r"><code># A visual description of the &quot;decision tree&quot;
-plot.dt = pdftools::pdf_convert(&quot;./ml_figures/Decision_tree.pdf&quot;, format = &quot;png&quot;, pages = 1, filenames = &quot;./ml_figures/Decision_tree.png&quot;)</code></pre>
-<pre><code>## Warning in sprintf(filenames, pages, format): 2 arguments not used by format
-## &#39;./ml_figures/Decision_tree.png&#39;</code></pre>
-<pre><code>## Converting page 1 to ./ml_figures/Decision_tree.png... done!</code></pre>
-<pre class="r"><code>knitr::include_graphics(plot.dt)</code></pre>
 <p><img src="ml_figures/Decision_tree.png" width="362" /></p>
-<pre class="r"><code># A visual description of the &quot;random forest&quot;
-plot.rf = pdftools::pdf_convert(&quot;./ml_figures/Random_forest.pdf&quot;, format = &quot;png&quot;, pages = 1, filenames = &quot;./ml_figures/Random_forest.png&quot;)</code></pre>
-<pre><code>## Warning in sprintf(filenames, pages, format): 2 arguments not used by format
-## &#39;./ml_figures/Random_forest.png&#39;</code></pre>
-<pre><code>## Converting page 1 to ./ml_figures/Random_forest.png... done!</code></pre>
-<pre class="r"><code>knitr::include_graphics(plot.rf)</code></pre>
 <p><img src="ml_figures/Random_forest.png" width="617" /></p>
-<pre class="r"><code># A visual description of the &quot;gradient boosting machine&quot;
-plot.gt = pdftools::pdf_convert(&quot;./ml_figures/Gradient_boosting.pdf&quot;, format = &quot;png&quot;, pages = 1, filenames = &quot;./ml_figures/Gradient_boosting.png&quot;)</code></pre>
-<pre><code>## Warning in sprintf(filenames, pages, format): 2 arguments not used by format
-## &#39;./ml_figures/Gradient_boosting.png&#39;</code></pre>
-<pre><code>## Converting page 1 to ./ml_figures/Gradient_boosting.png... done!</code></pre>
-<pre class="r"><code>knitr::include_graphics(plot.gt)</code></pre>
 <p><img src="ml_figures/Gradient_boosting.png" width="548" /></p>
-<pre class="r"><code># A visual description of the &quot;k nearest neighbours&quot;
-plot.knn = pdftools::pdf_convert(&quot;./ml_figures/K_nearest_neighbour.pdf&quot;, format = &quot;png&quot;, pages = 1, filenames = &quot;./ml_figures/K_nearest_neighbour.png&quot;)</code></pre>
-<pre><code>## Warning in sprintf(filenames, pages, format): 2 arguments not used by format
-## &#39;./ml_figures/K_nearest_neighbour.png&#39;</code></pre>
-<pre><code>## Converting page 1 to ./ml_figures/K_nearest_neighbour.png... done!</code></pre>
-<pre class="r"><code>knitr::include_graphics(plot.knn)</code></pre>
 <p><img src="ml_figures/K_nearest_neighbour.png" width="443" /></p>
-<pre class="r"><code># A visual description of the &quot;linear regression&quot;
-plot.lm = pdftools::pdf_convert(&quot;./ml_figures/Linear_regression.pdf&quot;, format = &quot;png&quot;, pages = 1, filenames = &quot;./ml_figures/Linear_regression.png&quot;)</code></pre>
-<pre><code>## Warning in sprintf(filenames, pages, format): 2 arguments not used by format
-## &#39;./ml_figures/Linear_regression.png&#39;</code></pre>
-<pre><code>## Converting page 1 to ./ml_figures/Linear_regression.png... done!</code></pre>
-<pre class="r"><code>knitr::include_graphics(plot.lm)</code></pre>
 <p><img src="ml_figures/Linear_regression.png" width="450" /></p>
-<pre class="r"><code># A visual description of the &quot;pls and pcr&quot;
-plot.plspcr = pdftools::pdf_convert(&quot;./ml_figures/PLS_PCR.pdf&quot;, format = &quot;png&quot;, pages = 1, filenames = &quot;./ml_figures/PLS_PCR.png&quot;)</code></pre>
-<pre><code>## Warning in sprintf(filenames, pages, format): 2 arguments not used by format
-## &#39;./ml_figures/PLS_PCR.png&#39;</code></pre>
-<pre><code>## Converting page 1 to ./ml_figures/PLS_PCR.png... done!</code></pre>
-<pre class="r"><code>knitr::include_graphics(plot.plspcr)</code></pre>
 <p><img src="ml_figures/PLS_PCR.png" width="678" /></p>
-<pre class="r"><code># A visual description of the &quot;regularized regression&quot;
-#plot.rreg = pdftools::pdf_convert(&quot;./ml_figures/Regularized_regression.pdf&quot;, format = &quot;png&quot;, pages = 1, filenames = &quot;./ml_figures/Regularized_regression.png&quot;)
-#knitr::include_graphics(plot.rreg)</code></pre>
-<pre class="r"><code># A visual description of the &quot;neural network&quot;
-plot.nnet = pdftools::pdf_convert(&quot;./ml_figures/Neural_network.pdf&quot;, format = &quot;png&quot;, pages = 1, filenames = &quot;./ml_figures/Neural_network.png&quot;)</code></pre>
-<pre><code>## Warning in sprintf(filenames, pages, format): 2 arguments not used by format
-## &#39;./ml_figures/Neural_network.png&#39;</code></pre>
-<pre><code>## Converting page 1 to ./ml_figures/Neural_network.png... done!</code></pre>
-<pre class="r"><code>knitr::include_graphics(plot.nnet)</code></pre>
 <p><img src="ml_figures/Neural_network.png" width="332" /></p>
-<pre class="r"><code># A visual description of the &quot;support vector machine&quot;
-plot.svm = pdftools::pdf_convert(&quot;./ml_figures/Support_vector_machine.pdf&quot;, format = &quot;png&quot;, pages = 1, filenames = &quot;./ml_figures/Support_vector_machine.png&quot;)</code></pre>
-<pre><code>## Warning in sprintf(filenames, pages, format): 2 arguments not used by format
-## &#39;./ml_figures/Support_vector_machine.png&#39;</code></pre>
-<pre><code>## Converting page 1 to ./ml_figures/Support_vector_machine.png... done!</code></pre>
-<pre class="r"><code>knitr::include_graphics(plot.svm)</code></pre>
 <p><img src="ml_figures/Support_vector_machine.png" width="412" /></p>
 
 

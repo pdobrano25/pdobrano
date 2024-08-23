@@ -2,4 +2,4 @@
 title: "About This Website"
 ---
 
-There is nothing about this website.
+A repository of Peter's dissertation notes.
